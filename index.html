@@ -1,56 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello World</title>
-  <style>
-    body {
-      font-family: system-ui, -apple-system, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      margin: 0;
-      background-color: #f4f4f9;
-      color: #222;
-    }
-    main {
-      text-align: center;
-      padding: 2rem;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    }
-    button {
-      margin-top: 1rem;
-      padding: 0.6rem 1.2rem;
-      font-size: 1rem;
-      cursor: pointer;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      background-color: #fff;
-    }
-    button:hover {
-      background-color: #f0f0f0;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Isadora Duncan Dancer</title>
+  <meta name="description" content="The art of Isadora Duncan through dance, performance, and study.">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./main.js" defer></script>
 </head>
 <body>
-  <main>
-    <h1 id="greeting">Hello, World!</h1>
-    <p>Hosted with vanilla HTML, CSS, and JavaScript.</p>
-    <button id="action-btn" type="button">Test JavaScript</button>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead" id="masthead">
+    <a class="brand" href="#home">Isadora Duncan<span>Dancer</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#classes">Classes &amp; Auditions</a>
+      <a href="#performances">Performances</a>
+      <a href="#reading-room">Reading Room</a>
+    </nav>
+    <a class="booking" href="#contact">Booking <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="cascade" id="home" aria-labelledby="page-title">
+      <div class="cascade-title">
+        <h1 id="page-title"><span>Isadora Duncan</span><em>Dancer</em></h1>
+        <p>Scroll to explore <span aria-hidden="true">↓</span></p>
+      </div>
+      <div class="cascade-images" aria-hidden="true">
+          <img class="cascade-image cascade-image--1 cascade-image--gold" src="../assets/isadora-dancing.jpg" alt="" draggable="false">
+          <img class="cascade-image cascade-image--2 cascade-image--photo" src="../assets/isadora-portrait.jpg" alt="" draggable="false">
+          <img class="cascade-image cascade-image--3 cascade-image--gold" src="../assets/isadora-dancing.jpg" alt="" draggable="false">
+          <img class="cascade-image cascade-image--4 cascade-image--photo" src="../assets/isadora-portrait.jpg" alt="" draggable="false">
+          <img class="cascade-image cascade-image--5 cascade-image--gold" src="../assets/isadora-dancing.jpg" alt="" draggable="false">
+          <img class="cascade-image cascade-image--6 cascade-image--photo" src="../assets/isadora-portrait.jpg" alt="" draggable="false">
+          <img class="cascade-image cascade-image--7 cascade-image--gold" src="../assets/isadora-dancing.jpg" alt="" draggable="false">
+          <img class="cascade-image cascade-image--8 cascade-image--photo" src="../assets/isadora-portrait.jpg" alt="" draggable="false">
+          <img class="cascade-image cascade-image--9 cascade-image--gold" src="../assets/isadora-dancing.jpg" alt="" draggable="false">
+          <img class="cascade-image cascade-image--10 cascade-image--photo" src="../assets/isadora-portrait.jpg" alt="" draggable="false">
+      </div>
+    </section>
+    <section class="split" id="about" aria-labelledby="about-title">
+      <figure class="hero-photo">
+        <img src="../assets/isadora-dancing.jpg" alt="Archival illustration of Isadora Duncan dancing against a gold background" fetchpriority="high">
+        <figcaption>Isadora Duncan · From the archive</figcaption>
+      </figure>
+      <div class="hero-copy">
+        <p class="eyebrow">The company &amp; seminary</p>
+        <h2 id="about-title" class="about-title">Isadora<br>Duncan<br><em>Dancer</em></h2>
+        <div class="hero-rule"></div>
+        <p class="intro">The art of Isadora Duncan through dance, performance, and study.</p>
+        <p class="summary">Explore Duncan’s legacy and the ways it lives on in the studio and onstage.</p>
+        <a class="hero-link" href="#classes">Explore classes <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+    <section class="gallery section-wrap" id="classes" aria-labelledby="classes-title">
+      <div class="section-heading">
+        <h2 id="classes-title">Classes &amp; Auditions</h2>
+        <p>Explore the company’s classes, workshops, and audition program.</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-frame"><img src="../assets/isadora-portrait.jpg" alt="Archival photograph of Isadora Duncan" loading="lazy" draggable="false"></div>
+          <h3>Children’s Classes</h3>
+          <p>An introduction to expressive movement.</p>
+        </article>
+        <article class="card">
+          <div class="card-frame card-type" aria-hidden="true"><span>Dance<br><i>workshop</i></span></div>
+          <h3>Teen Girls’ Self-Esteem Workshop</h3>
+          <p>Dance and creative expression for teens.</p>
+        </article>
+        <article class="card">
+          <div class="card-frame card-dance"><img src="../assets/isadora-dancing.jpg" alt="Archival illustration of Isadora Duncan dancing" loading="lazy" draggable="false"></div>
+          <h3>Teacher Training Workshops</h3>
+          <p>Dance therapy workshops for educators.</p>
+        </article>
+      </div>
+      <aside class="auditions" aria-labelledby="auditions-title">
+        <h3 id="auditions-title">Professional Dancer Auditions</h3>
+        <a href="#contact">Ask about company membership <span aria-hidden="true">↗</span></a>
+      </aside>
+    </section>
+    <div class="more section-wrap">
+      <section id="performances" aria-labelledby="performances-title">
+        <h2 id="performances-title">Performances</h2>
+        <p>Performance dates, program details, and venue box office links will appear here.</p>
+      </section>
+      <section id="reading-room" aria-labelledby="reading-title">
+        <h2 id="reading-title">Reading Room</h2>
+        <p>Books, articles, and press on Isadora Duncan and the company.</p>
+      </section>
+    </div>
   </main>
-
-  <script>
-    const btn = document.getElementById('action-btn');
-    const greeting = document.getElementById('greeting');
-
-    btn.addEventListener('click', () => {
-      greeting.textContent = 'JavaScript is working!';
-    });
-  </script>
+  <footer id="contact">
+    <div class="section-wrap footer-inner">
+      <h2>Booking &amp; Contact</h2>
+      <p>Dance manager and publicist details will appear here.</p>
+      <a href="#home">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
 </body>
 </html>
